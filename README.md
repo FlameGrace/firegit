@@ -28,4 +28,9 @@ Stash  :   git stash 保存工作现场
            git stash pop 恢复工作现场并删除快照
            git stash apply xx 恢复工作现场 
 Pull   :   git pull 从远程仓库下载最新的版本
+Tag    :   git tag v1.0 创建一个标签
+           git tag 列出所有标签
+           git tag -a v1.0 -m "dd" 对指定的标签创建说明
+           git show v1.0 查看说明文字
+           git tag -s v1.0 xxxxx 给指定的标签用私钥签名  必须安装gpg
 
