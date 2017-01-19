@@ -9,7 +9,10 @@ Reset:  git reset --hard HEAD 恢复到当前版本
 Log:    git log 列出日志
 Status: git status 列出当前仓库状态
 RM    : git rm file 删除某个文件
-Push:   git push origin master 上传本地仓库到远程仓库
+Push:   git push origin master 上传本地分支仓库到远程仓库
+        git push origin v1.0 上传标签到远程 
+        git push origin --tags 上传所以标签
+        git push origin :refs/tags/v1.0 先删除本地tag再执行此命令删除远程标签
 Clone:  git clone git@github.com:FlameGrace/firegit.git 从远程仓库克隆项目
 Checkout:  git checkout -b dev 创建并切换到分支
            git checkout -b dev origin/dev 创建远程分支到本地
@@ -33,4 +36,4 @@ Tag    :   git tag v1.0 创建一个标签
            git tag -a v1.0 -m "dd" 对指定的标签创建说明
            git show v1.0 查看说明文字
            git tag -s v1.0 xxxxx 给指定的标签用私钥签名  必须安装gpg
-
+           git tag -d v1.0 删除本地标签
