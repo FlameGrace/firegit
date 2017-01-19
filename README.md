@@ -9,6 +9,7 @@ Checkout:  git checkout -b dev 创建并切换到分支
            git checkout file 删除工作区修改
            git checkout -- file 撤销工作区修改
 Branch :   git branch -d dev  删除分支
+           git branch -D dev 强制删除分支
            git branch dev 创建分支 
            git branch 列出所有分支
 Merge  :   git merge dev 合并分支
