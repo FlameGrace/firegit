@@ -12,6 +12,8 @@ Branch :   git branch -d dev  删除分支
            git branch dev 创建分支 
            git branch 列出所有分支
 Merge  :   git merge dev 合并分支
-Test Branch 3        
-Test Branch
-Test Branch
+Stash  :   git stash 保存工作现场
+           git stash list 列出当前的快照
+           git stash drop xx销毁快照
+           git stash pop 恢复工作现场并删除快照
+           git stash apply xx 恢复工作现场 
