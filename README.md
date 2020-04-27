@@ -10,6 +10,7 @@
 + git reset --hard HEAD 恢复到当前版本
 + git reset --hard HEAD^ HEAD^^ 恢复到上一个版本 上上一个版本
 + git reset --hard xx 回退到某一个版本
++ git push -f origin master  回退后，需要执行强制提交
 ## Log    
 + git log 列出日志
 ## Add    
@@ -22,7 +23,6 @@
 + git push origin master 上传本地分支仓库到远程仓库
 + git push origin v1.0 上传标签到远程 
 + git push origin --tags 上传所以标签
-+ git push origin :refs/tags/v1.0 先删除本地tag再执行此命令删除远程标签
 ## Clone  
 + git clone git@github.com:FlameGrace/firegit.git 从远程仓库克隆项目
 ## Checkout  
@@ -56,6 +56,7 @@
 + git tag -d v1.0 删除本地标签
 + git push origin v1.0  提交本地标签到远程仓库
 + git push origin :v1.0   删除远程仓库的标签
++ git push origin :refs/tags/v1.0  github删除远程tag，需先删除本地tag
 ## Checkout-ignore
 + git checkout-ignore -v xx  查找为什么添加不了某个文件，是否是忽略规则的原因
 ## Config
